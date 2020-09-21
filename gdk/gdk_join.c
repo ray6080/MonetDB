@@ -3567,6 +3567,11 @@ BATthetajoin(BAT **r1p, BAT **r2p, BAT *l, BAT *r, BAT *sl, BAT *sr, int op, boo
 	return thetajoin(r1p, r2p, l, r, sl, sr, opcode, estimate, t0);
 }
 
+/*
+ * r1p, r2p: result BATs
+ * l, r: input BATs
+ * sl, sr: candidate lists
+ * */
 gdk_return
 BATjoin(BAT **r1p, BAT **r2p, BAT *l, BAT *r, BAT *sl, BAT *sr, bool nil_matches, BUN estimate)
 {
